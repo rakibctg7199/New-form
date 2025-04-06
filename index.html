@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ডিপোজিট ফর্ম</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="form-container">
+    <h2>💰 ডিপোজিট ফর্ম</h2>
+    <form id="depositForm">
+      <label>আপনার নাম:</label>
+      <input type="text" required />
+
+      <label>বিকাশ নম্বর (01979448661):</label>
+      <input type="text" value="01979448661" readonly onclick="copyBkash()" />
+
+      <label>লেনদেন পদ্ধতি:</label>
+      <select required>
+        <option value="">পদ্ধতি নির্বাচন করুন</option>
+        <option>Send Money</option>
+        <option>Personal</option>
+      </select>
+
+      <label>পরিমাণ:</label>
+      <select required>
+        <option value="">টাকা নির্বাচন করুন</option>
+        <option>500</option>
+        <option>1000</option>
+        <option>1500</option>
+        <option>2000</option>
+        <option>2500</option>
+        <option>3000</option>
+        <option>3500</option>
+        <option>4000</option>
+        <option>4500</option>
+        <option>5000</option>
+      </select>
+
+      <label>TRX ID (Send Money এর):</label>
+      <input type="text" required />
+
+      <label>NID নম্বর (ঐচ্ছিক):</label>
+      <input type="text" />
+
+      <label>NID সামনের ছবি:</label>
+      <input type="file" accept="image/*" />
+
+      <label>NID পেছনের ছবি:</label>
+      <input type="file" accept="image/*" />
+
+      <button type="submit">✅ জমা দিন</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
